@@ -3,9 +3,22 @@
 
 
 <div data-controller="toggle" data-toggle-change-class="hidden">
-    <h2 class="hidden" data-toggle-target="title">test1</h2>
-    <h2 class="hidden" data-toggle-target="title">test2</h2>
-    <h2 class="hidden" data-toggle-target="title">test3</h2>
-
     <button data-toggle-target="btn" data-action="click->toggle#update">Vanish!</button>
+    <div>
+        <h2 data-toggle-target="element">test1</h2>
+        <h2 data-toggle-target="element">test2</h2>
+        <h2 data-toggle-target="element">test3</h2>
+    </div>
+</div>
+
+<div data-controller="toggle" data-toggle-change-class="hidden">
+    <button data-toggle-target="btn" data-action="click->toggle#update">Dropdown toggle</button>
+
+    <select name="dropdown" id="dropdown" data-toggle-target="element">
+        <option value="Amsterdam">Amsterdam</option>
+        <option value="Berlin">Berlin</option>
+        <option value="Paris">Paris</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Madrid">Madrid</option>
+    </select>
 </div>
